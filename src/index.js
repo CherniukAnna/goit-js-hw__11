@@ -13,7 +13,7 @@ const lightbox = new SimpleLightbox('.gallery a', {
 let search = '';
 formEl.addEventListener('submit', async e => {
   e.preventDefault();
-  buttonLoadMore.classList.add('hidden');
+  buttonLoadMore.classList.add('isHidden');
   search = formEl.searchQuery.value;
   resetPages();
   resetCounter();
@@ -40,6 +40,7 @@ formEl.addEventListener('submit', async e => {
   } catch (error) {
     console.log(error.message);
   }
+  
 });
 
 buttonLoadMore.addEventListener('click', async () => {
@@ -56,5 +57,5 @@ buttonLoadMore.addEventListener('click', async () => {
   }
 });
 
-// buttonLoadMore.ClassList.add('hidden');
+
 
