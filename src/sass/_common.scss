@@ -87,6 +87,8 @@ img {
     height: 233px;
 }
 .gallery {
+
+  
   padding-top: 14px;
 
   display: flex;
@@ -95,7 +97,7 @@ img {
   gap: 25px;
 }
 .photo-card {
-  width: 23%;
+  // width: 23%;
 }
 
 .info-item {
@@ -169,43 +171,6 @@ b {
 }
 
 
-// .preloader {
-//     position: fixed;
-//     left: 0;
-//     top: 0;
-//     display: none;
-//     right: 0;
-//     bottom: 0;
-//     overflow: hidden;
-//     /* фоновый цвет */
-//     background: #92729574;
-//     z-index: 1001;
-
-    
-//     box-shadow: -5px -5px 20px #FFF, 5px 5px 20px #BABECC;
-//     transition: all 250 ease-in-out;
-//     cursor: pointer;
-// }
-
-// .loaded_hiding .preloader {
-//     transition: 250 opacity;
-//     opacity: 0;
-// }
-
-// .loaded .preloader {
-//     display: none;
-// }
-
-// .loading .preloader {
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-// }
-
-
-//
-///
-//galery
 
 
 .card-link {
@@ -227,7 +192,7 @@ b {
 .photo-card {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  // width: 100%;
   height: 100%;
   justify-content: space-evenly;
 }
@@ -270,65 +235,3 @@ width: 400px;
   text-shadow: 1px 1px 1px #FFF;
 
 }
-
-.info-item-likes {
-  // display: flex;
-  // flex-direction: row;
-  // align-items: center;
-}
-
-
-// .box-likes {
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-// }
-
-// button.circle {
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-
-//   margin-right: 10px;
-//   border: none;
-//   outline: none;
-
-//   width: 100%;
-//   cursor: pointer;
-
-//   width: 40px;
-//   height: 40px;
-//   border-radius: 50%;
-//   background-color: transparent;
-
-//   box-shadow: -2px -2px 5px white, 3px 3px 5px rgba(0, 0, 0, 0.1);
-
-//   &:hover {
-//     box-shadow: inset -1px -1px 3px white, inset 1px 1px 3px rgba(0, 0, 0, 0.1);
-//   }
-
-//   &:hover > .bi {
-//     color: #9b519abf;
-//     transform: scale(0.8);
-//   }
-
-//   &:active > .bi {
-//     color: #9b519abf;
-//   }
-
-//   &:active {
-//     box-shadow: inset -1px -1px 3px white,
-//       inset 1px 1px 3px rgba(0, 0, 0, 0.1);
-//   }
-
-//   &:hover > .bi {
-//     color: #9b519abf;
-//   }
-
-// }
-
-// .bi {
-//   width: 15px;
-//   color: #fff;
-
-// }
