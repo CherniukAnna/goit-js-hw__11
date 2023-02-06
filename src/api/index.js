@@ -22,7 +22,7 @@ async function getPhotos(name) {
   page += 1;
 
   const photosFetch = await fetch(
-    `${BASE_URL}?${KEY}&q=${name}&per_page=40&&page=${page}&image_type=photo&orientation=horizontal&safesearch=true`
+    `${BASE_URL}?${KEY}&qqq=${name}&per_page=40&&page=${page}&image_type=photo&orientation=horizontal&safesearch=true`
   );
   const photos = await photosFetch.json();
   return { photos, page };
