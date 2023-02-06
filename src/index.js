@@ -13,7 +13,7 @@ const lightbox = new SimpleLightbox('.gallery a', {
 let search = '';
 formEl.addEventListener('submit', async e => {
   e.preventDefault();
-  buttonLoadMore.classList.add('isHidden');
+  buttonLoadMore.classList.add('hidden');
   search = formEl.searchQuery.value;
   resetPages();
   resetCounter();
@@ -41,6 +41,7 @@ formEl.addEventListener('submit', async e => {
     console.log(error.message);
   }
 });
+
 buttonLoadMore.addEventListener('click', async () => {
   try {
     let photos = await getPhotos(search);
@@ -55,4 +56,5 @@ buttonLoadMore.addEventListener('click', async () => {
   }
 });
 
+// buttonLoadMore.ClassList.add('hidden');
 
