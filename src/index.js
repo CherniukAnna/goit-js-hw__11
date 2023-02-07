@@ -29,11 +29,13 @@ formEl.addEventListener('submit', async e => {
       return;
     }
     if (total < 40) {
-      buttonLoadMore.classList.add('hidden');
-        Notiflix.Notify.warning(
-          "We're sorry, but you've reached the end of search results."
-        );
-}
+      buttonLoadMore.classList.add('isHidden');
+      Notiflix.Notify.warning(
+        "We're sorry, but you've reached the end of search results."
+      );
+    } else if (total > 40) {
+      buttonLoadMore.classList.remove('isHidden');
+    }
     Notiflix.Notify.success(`Hooray! We found ${total} images.`);
 
     getCounter(photos.page, total);
@@ -41,7 +43,7 @@ formEl.addEventListener('submit', async e => {
     getGallery(markup);
     lightbox.refresh();
 
-    buttonLoadMore.classList.remove('isHidden');
+    
   } catch (error) {
     console.log(error.message);
   }
