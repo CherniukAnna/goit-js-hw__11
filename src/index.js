@@ -13,7 +13,7 @@ const lightbox = new SimpleLightbox('.gallery a', {
 let search = '';
 formEl.addEventListener('submit', async e => {
   e.preventDefault();
-  buttonLoadMore.classList.add('isHidden');
+  // buttonLoadMore.classList.add('isHidden');
   search = formEl.searchQuery.value;
   resetPages();
   resetCounter();
@@ -28,7 +28,12 @@ formEl.addEventListener('submit', async e => {
       );
       return;
     }
-
+    if (total < 40) {
+      buttonLoadMore.classList.add('hidden');
+        Notiflix.Notify.warning(
+          "We're sorry, but you've reached the end of search results."
+        );
+}
     Notiflix.Notify.success(`Hooray! We found ${total} images.`);
 
     getCounter(photos.page, total);
@@ -40,7 +45,7 @@ formEl.addEventListener('submit', async e => {
   } catch (error) {
     console.log(error.message);
   }
-  
+ 
 });
 
 buttonLoadMore.addEventListener('click', async () => {
@@ -56,6 +61,3 @@ buttonLoadMore.addEventListener('click', async () => {
     console.log(error.message);
   }
 });
-
-
-

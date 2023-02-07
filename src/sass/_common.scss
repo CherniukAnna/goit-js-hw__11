@@ -70,6 +70,9 @@ p {
 a {
     text-decoration: none;
 }
+.isHidden {
+  visibility: hidden;
+}
 
 .hidden {
   display: none;
@@ -96,9 +99,7 @@ img {
   justify-content: center;
   gap: 25px;
 }
-.photo-card {
-  // width: 23%;
-}
+
 
 .info-item {
   font-size: 12px;
@@ -115,9 +116,7 @@ b {
   margin-bottom: 20px;
 }
 
-.isHidden {
-  visibility: hidden;
-}
+
 .input{
   max-width: 350px;
     width: 350px;
@@ -235,3 +234,5 @@ width: 400px;
   text-shadow: 1px 1px 1px #FFF;
 
 }
+
+
